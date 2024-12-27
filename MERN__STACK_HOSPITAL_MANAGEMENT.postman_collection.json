@@ -1,0 +1,725 @@
+{
+	"info": {
+		"_postman_id": "d9d41236-89e2-4215-9b66-16017c12dae3",
+		"name": "MERN__STACK_HOSPITAL_MANAGEMENT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39705794"
+	},
+	"item": [
+		{
+			"name": "MESSAGE",
+			"item": [
+				{
+					"name": "send message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Tanjiro\",\r\n    \"lastName\": \"Kamado\",\r\n    \"email\": \"abc@gmail.com\",\r\n    \"phone\": \"1234567890\",\r\n    \"message\": \"Hey, it's the first message\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/message/send",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"message",
+								"send"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all messages",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER",
+			"item": [
+				{
+					"name": "patient register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Aditya\",\r\n        \"lastName\": \"Kumar\",\r\n        \"email\": \"abcd@gmail.com\",\r\n        \"phone\": \"1234567890\",\r\n        \"password\": \"12345678\",\r\n        \"gender\": \"Male\", \r\n        \"dob\": \"1922-01-22\",\r\n        \"aadhar\":\"123412341234\",\r\n        \"role\": \"Patient\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/patient/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"patient",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"12345678\",\r\n    \"confirmPassword\": \"12345678\",\r\n    \"role\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"kabuto\",\r\n        \"lastName\": \"Kumar\",\r\n        \"email\": \"kabutoadmin@gmail.com\",\r\n        \"phone\": \"1234567890\",\r\n        \"password\": \"12345678\",\r\n        \"gender\": \"Male\", \r\n        \"dob\": \"1922-01-22\",\r\n        \"aadhar\":\"123412341234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/admin/addnew",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"admin",
+								"addnew"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all doctors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/doctors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"doctors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get admin details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/admin/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"admin",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get admin details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/v1/user/admin/me",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"admin",
+										"me"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "JSON",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"type": "text"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin",
+									"type": "text"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"type": "text"
+								},
+								{
+									"key": "Content-Length",
+									"value": "241",
+									"type": "text"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f1-SkP+90MoAJG7R1veAGaTJGP73sg\"",
+									"type": "text"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Nov 2024 10:00:58 GMT",
+									"type": "text"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"type": "text"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"user\": {\n        \"_id\": \"6742e6bf3da4cf0e7ff3756d\",\n        \"firstName\": \"Aditya\",\n        \"lastName\": \"Kumar\",\n        \"email\": \"admin@gmail.com\",\n        \"phone\": \"1234567890\",\n        \"aadhar\": \"123412341234\",\n        \"dob\": \"1922-01-22T00:00:00.000Z\",\n        \"gender\": \"Male\",\n        \"role\": \"Admin\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get patient details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/patient/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"patient",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get patient details",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:4000/api/v1/user/patient/me",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"patient",
+										"me"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "JSON",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express",
+									"type": "text"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin",
+									"type": "text"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8",
+									"type": "text"
+								},
+								{
+									"key": "Content-Length",
+									"value": "242",
+									"type": "text"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f2-+NAtyNtTu+tDZ/ra/Gz/21UbDkw\"",
+									"type": "text"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 24 Nov 2024 10:02:55 GMT",
+									"type": "text"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive",
+									"type": "text"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"user\": {\n        \"_id\": \"6742c039595544f67ab2b789\",\n        \"firstName\": \"Aditya\",\n        \"lastName\": \"Kumar\",\n        \"email\": \"abcd@gmail.com\",\n        \"phone\": \"1234567890\",\n        \"aadhar\": \"123412341234\",\n        \"dob\": \"1922-01-22T00:00:00.000Z\",\n        \"gender\": \"Male\",\n        \"role\": \"Patient\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "admin logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/admin/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"admin",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patient logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/patient/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"patient",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new doctor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "docAvatar",
+									"type": "file",
+									"src": "/D:/doctor.jpg"
+								},
+								{
+									"key": "firstName",
+									"value": "Harry",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Potter",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "potter@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "9876543210",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "87654321",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "1990-11-12",
+									"type": "text"
+								},
+								{
+									"key": "aadhar",
+									"value": "123412341234",
+									"type": "text"
+								},
+								{
+									"key": "doctorDepartment",
+									"value": "Radiology",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/doctor/addnew",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"doctor",
+								"addnew"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "docAvatar",
+											"type": "file",
+											"src": "/D:/doctor.jpg"
+										},
+										{
+											"key": "firstName",
+											"value": "Harry",
+											"type": "text"
+										},
+										{
+											"key": "lastName",
+											"value": "Potter",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "potter@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "9876543210",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "87654321",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "Male",
+											"type": "text"
+										},
+										{
+											"key": "dob",
+											"value": "1990-11-12",
+											"type": "text"
+										},
+										{
+											"key": "aadhar",
+											"value": "123412341234",
+											"type": "text"
+										},
+										{
+											"key": "doctorDepartment",
+											"value": "Radiology",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:4000/api/v1/user/doctor/addnew",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "4000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"doctor",
+										"addnew"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "529"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"211-0SGD5y7x9zj77XMXwsJKwhvQdyc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 26 Nov 2024 06:57:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"New Doctor Registered!\",\n    \"doctor\": {\n        \"firstName\": \"Harry\",\n        \"lastName\": \"Potter\",\n        \"email\": \"potter@gmail.com\",\n        \"phone\": \"9876543210\",\n        \"aadhar\": \"123412341234\",\n        \"dob\": \"1990-11-12T00:00:00.000Z\",\n        \"gender\": \"Male\",\n        \"password\": \"$2b$10$CafVJpPXSfX3kigUW8hVC.wWj978sbl0IwLHh5eAKzWvpRgZFVXRS\",\n        \"role\": \"Doctor\",\n        \"doctorDepartment\": \"Radiology\",\n        \"docAvatar\": {\n            \"public_id\": \"pvzftoaliyfk1ulsfqvh\",\n            \"url\": \"https://res.cloudinary.com/dmndl5jep/image/upload/v1732604219/pvzftoaliyfk1ulsfqvh.jpg\"\n        },\n        \"_id\": \"6745713c4502a95f5c50ca23\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "APPOINTMENT",
+			"item": [
+				{
+					"name": "post an appointment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Aditya\",\r\n        \"lastName\": \"Kumar\",\r\n        \"email\": \"abcd@gmail.com\",\r\n        \"phone\": \"1234567890\",\r\n        \"aadhar\":\"123412341234\",\r\n        \"gender\": \"Male\", \r\n        \"dob\": \"1922-01-22\",\r\n        \"appointment_date\": \"1234\",\r\n        \"department\": \"Radiology\",\r\n        \"doctor_firstName\": \"Harry\",\r\n        \"doctor_lastName\": \"Potter\",\r\n        \"address\": \"earth\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/appointment/post",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all appointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/appointment/getall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"getall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update appointment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/appointment/update/6745a98ad8d69a775230d867",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"update",
+								"6745a98ad8d69a775230d867"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete an appointment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/appointment/delete/6745aa369a01ca1aefe01e3a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"delete",
+								"6745aa369a01ca1aefe01e3a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
