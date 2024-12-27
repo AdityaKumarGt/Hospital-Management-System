@@ -24,7 +24,7 @@ A full-stack web application built using the MERN stack (MongoDB, Express.js, Re
 
 ## Tech Stack
 
-- **Frontend**: React, React Router, Tailwind CSS / Bootstrap (optional)
+- **Frontend**: React, React Router, CSS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens)
